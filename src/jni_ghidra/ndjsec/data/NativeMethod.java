@@ -1,4 +1,4 @@
-package jni_ghidra.ndjsec;
+package jni_ghidra.ndjsec.data;
 
 import java.util.ArrayList;
 
