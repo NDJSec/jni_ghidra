@@ -14,15 +14,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class JadxDecomp {
+	private ArrayList<NativeMethod> methodList;
 	
-	public JadxDecomp(String apk, String logFile, String className) {
+	public JadxDecomp(File apk, String logFile, String className) {
         JadxArgs jadxArgs = new JadxArgs();
         jadxArgs.setDebugInfo(false);
-        jadxArgs.getInputFiles().add(new File(apk));
+        jadxArgs.getInputFiles().add(apk);
 
         try (JadxDecompiler jadx = new JadxDecompiler(jadxArgs)) {
             jadx.load();
-            ArrayList<NativeMethod> methodList = extractNativeMethods(jadx, className);
+            this.methodList = extractNativeMethods(jadx, className);
 
             Gson gson = new Gson();
             writeToJsonFile(logFile, methodList, gson);
@@ -30,6 +31,10 @@ public class JadxDecomp {
         } catch (Exception e) {
             e.printStackTrace();
         }
+	}
+	
+	public ArrayList<NativeMethod> getMethodList() {
+		return this.methodList;
 	}
 
     private static ArrayList<NativeMethod> extractNativeMethods(JadxDecompiler jadx, String className) {

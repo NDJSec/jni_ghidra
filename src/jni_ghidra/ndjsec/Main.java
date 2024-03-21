@@ -1,5 +1,7 @@
 package jni_ghidra.ndjsec;
 
+import java.io.File;
+
 import jni_ghidra.ndjsec.jadx_decomp.JadxDecomp;
 
 public class Main {
@@ -10,7 +12,7 @@ public class Main {
             return;
         }
         
-        new JadxDecomp(args[0], args[1], args[2]);
+        new JadxDecomp(new File(args[0]), args[1], args[2]);
 
     }
 
