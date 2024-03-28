@@ -2,6 +2,11 @@
 .project
 assets/
 
+# Testing files
+.pydevproject
+.vscode/
+log.json
+
 # Compiled class file
 *.class
 
