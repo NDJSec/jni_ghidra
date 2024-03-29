@@ -29,21 +29,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/NDJSec/jni_ghidra">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">JNI Ghidra</h3>
 
   <p align="center">
-    project_description
+    Ghidra scripts for cleaning up JNI calls for Android RE
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NDJSec/jni_ghidra"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/NDJSec/jni_ghidra/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/NDJSec/jni_ghidra/issues">Request Feature</a>
   </p>
 </div>
 
@@ -74,8 +74,13 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+<br>
 
+## Android Reverse Engineering PDF [HERE](https://github.com/NDJSec/Android-Reverse-Engineering)
+<br>
 
+## Android Reverse Engineering Tools [DroidAnalysis](https://github.com/NDJSec/DroidAnalysis)
+<br>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -101,7 +106,7 @@ JNI_Ghidra, is a plugin built to help speed up the process of static analysis on
 !TODO
 
 ### Prerequisites
-!TODO
+* Ghidra 11.0 or higher
 
 ### Installation
 !TODO
@@ -129,7 +134,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/NDJSec/jni_ghidra/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +172,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 NDJSec - [@NicolasJanis1](https://twitter.com/NicolasJanis1) - nicolas.d.janis@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/NDJSec/jni_ghidra](https://github.com/NDJSec/jni_ghidra)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,18 +191,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/NDJSec/jni_ghidra.svg?style=for-the-badge
+[contributors-url]: https://github.com/NDJSec/jni_ghidra/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NDJSec/jni_ghidra.svg?style=for-the-badge
+[forks-url]: https://github.com/NDJSec/jni_ghidra/network/members
+[stars-shield]: https://img.shields.io/github/stars/NDJSec/jni_ghidra.svg?style=for-the-badge
+[stars-url]: https://github.com/NDJSec/jni_ghidra/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NDJSec/jni_ghidra.svg?style=for-the-badge
+[issues-url]: https://github.com/NDJSec/jni_ghidra/issues
+[license-shield]: https://img.shields.io/github/license/NDJSec/jni_ghidra.svg?style=for-the-badge
+[license-url]: https://github.com/NDJSec/jni_ghidra/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nicolas-janis/
 [product-screenshot]: images/screenshot.png
-[Java]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Java-url]: https://nextjs.org/
+[Java]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
+[Java-url]: https://www.java.com/en/
