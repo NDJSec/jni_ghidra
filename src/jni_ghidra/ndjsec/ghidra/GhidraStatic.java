@@ -6,6 +6,7 @@ import java.util.List;
 import ghidra.app.decompiler.ClangToken;
 import ghidra.app.decompiler.DecompilerLocation;
 import ghidra.program.model.address.Address;
+import ghidra.program.model.address.GenericAddress;
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.DataTypeManager;
 import ghidra.program.model.lang.OperandType;
@@ -84,12 +85,12 @@ public class GhidraStatic {
 
 	}
 	
-	public void fixJNIEnvPointer(ClangToken env_token) {
+	public void fixJNIEnvPointer(ArrayList<String> env_token) {
 		Variable[] local_vars = this.jni_onload_function.getLocalVariables();
 		Variable env_var = null;
 		DataType envType;
 		for (Variable local_var: local_vars) {
-			if (local_var.getName().equals(env_token.getText())) {
+			if (local_var.getName().equals(env_token.get(0))) {
 				env_var = local_var;
 			}
 		}
@@ -103,8 +104,18 @@ public class GhidraStatic {
 		}
 	}
 	
-	public void fixFunctionTable() {
-		Parameter vmParam = this.jni_onload_function.getParameters()[0];
+	public List<String> getLocalVariable() {
+		Variable[] ghidra_local_vars = this.jni_onload_function.getLocalVariables();
+		List<String> local_vars = new ArrayList<>();
+		
+		for (Variable local_var : ghidra_local_vars) {
+			local_vars.add(local_var.getName());
+		}
+		
+		return local_vars;
+	}
+	
+	public void fixFunctionTable(GenericAddress function_table, int num_entries) {
 		
 	}
 	

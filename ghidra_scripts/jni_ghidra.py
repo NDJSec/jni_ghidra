@@ -16,6 +16,8 @@ from jni_ghidra.ndjsec.jadx_decomp import JadxDecomp
 from jni_ghidra.ndjsec.ghidra import GhidraStatic
 import ghidra
 
+import time
+
 jniUtils = JNIUtils(state, FlatProgramAPI(currentProgram))
 print("[ + ] Importing APK")
 manager = jniUtils.getDataTypeManageFromArchiveFile()
@@ -52,8 +54,8 @@ if not current_location:
     Msg.showWarn(None, "Current Location Null", "Failed to obtain current location.")
     
 
-print("Current Variable: " + str(current_location.getToken()))
+JNIEnv_ptr = askChoices("Choose JNIEnv Pointer", "Please choose the 2nd variable of the GetEnv function pointer below. (Ex. (*(*vm)->GetEnv)(vm,&local_50,0x10006);, choose local_50)", ghidra_static.getLocalVariable())
 
-ghidra_static.fixJNIEnvPointer(current_location.getToken())
+ghidra_static.fixJNIEnvPointer(JNIEnv_ptr)
 #ghidra_static.fixFunctionTable(current_location.getToken())
 
